@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
    private $tipo_de_base = 'mysql';
    private $host = 'localhost';
    private $nombre_de_base = 'angulasice';
-   private $usuario = 'root';
-   private $contrasena = 'hitokiri';
+   private $usuario = '';
+   private $contrasena = '';
    public function __construct() {
       //Sobreescribo el método constructor de la clase PDO.
       try{

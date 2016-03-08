@@ -1,7 +1,7 @@
 var app = angular.module('myApp', []);
 app.controller('productsCtrl', function($scope, $http) {
     $scope.id = "";
-    $scope.name = "hjhjh";
+    $scope.name = "";
     $scope.description = "";
     $scope.price = "";
 // clear variable / form values
@@ -19,11 +19,11 @@ $scope.showCreateForm = function(){
     // change modal title
     $('#modal-product-title').text("Create New Product");
      
-    //// hide update product button
-    //$('#btn-update-product').hide();
-    //
-    //// show create product button
-    //$('#btn-create-product').show();
+    // hide update product button
+    $('#btn-update-product').hide();
+
+    // show create product button
+    $('#btn-create-product').show();
 
     $('#modal-product-form').openModal();
      
